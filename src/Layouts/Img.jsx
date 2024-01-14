@@ -8,7 +8,7 @@ const Img = ({ src, alt, imgClassName, className }) => {
           src={src}
           alt={alt}
           loading="lazy"
-          className={` ${imgClassName}`}
+          className={`w-full h-full ${imgClassName}`}
         />
       </picture>
     </div>

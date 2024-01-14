@@ -15,7 +15,7 @@ const Cards = ({ showSaleBage, sale, price, title, CardImg }) => {
     <Flex className=" bg-[#FFF] rounded-[10px] flex-col font-poppins relative">
       <Img
         src={CardImg}
-        className={"cd:w-[314px] md:w-[175px] p-2 rounded-[10px] "}
+        className={"cd:w-[314px] md:w-[175px] cd:h-[314px] p-2 rounded-[10px] "}
       />
       {showSaleBage && (
         <h3 className="cd:text-sm md:text-[8px] cd:w-[91px] md:w-[65px] font-semibold text-[#FAFAFA] px-3 py-1 bg-CustomLinear w-[91px] rounded-tl-[10px] rounded-tr-[2px] rounded-bl-[2px] rounded-br-[2px] absolute top-2 left-2 z-10">
