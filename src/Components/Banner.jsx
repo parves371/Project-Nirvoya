@@ -13,6 +13,29 @@ const Banner = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    appendDots: (dots) => (
+      <div
+        style={{
+          // margin: "0px",
+          position: "absolute",
+          bottom: "26px",
+          left: "0px"
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+    customPaging: (i) => (
+      <div
+        style={{
+          width: "30px",
+          color: "blue",
+          // border: "1px blue solid",
+        }}
+      >
+        {i + 1}
+      </div>
+    ),
   };
   return (
     <section className="mt-5">

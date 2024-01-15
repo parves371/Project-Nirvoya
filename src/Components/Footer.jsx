@@ -24,7 +24,7 @@ const Footer = () => {
       <Container>
         <Flex
           className={
-            "cd:justify-around md:flex-col cd:flex-row cd:mt-[93px] md:mt-14 gap-y-6 pb-12"
+            "cd:justify-around md:flex-col cd:flex-row cd:pt-[93px] md:pt-14 gap-y-6 pb-12 md:ml-5 cd:ml-0 "
           }
         >
           <Flex className={"items-center gap-x-4"}>
@@ -75,10 +75,10 @@ const Footer = () => {
       </Container>
       <div className="before:content-[''] before:absolute relative before:w-full before:H-[1.5px] before:border-solid before:border-[#EFEEEE] before:border before:top-[-60px]">
         <Container>
-          <Flex className={"justify-between mt-[60px]"}>
+          <Flex className={"cd:justify-around md:flex-col-reverse md:gap-y-8 cd:flex-row cd:mt-[60px] md:mt-6 md:ml-5 cd:ml-0"}>
             <Flex className={"flex-col gap-y-9 "}>
-              <Img src={Logo} className={"w-[153px] h-[55px]"} />
-              <p className="text-lg font-normal text-[#333333] w-[390px]">
+              <Img src={Logo} className={"w-[153px] h-[55px] cd:flex md:hidden"} />
+              <p className="text-lg font-normal text-[#333333] w-[390px] cd:flex md:hidden">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -161,13 +161,13 @@ const Footer = () => {
             </Flex>
           </Flex>
         </Container>
-        <div className="before:content-[''] before:absolute relative before:w-full before:H-[1.5px] before:border-solid before:border-[#EFEEEE] before:border before:top-14"></div>
+        <div className="before:content-[''] before:absolute relative before:w-full before:H-[1.5px] before:border-solid before:border-[#EFEEEE] before:border before:top-14 "></div>
         <Container>
-          <Flex className={"mt-28 justify-between"}>
+          <Flex className={"mt-28 cd:justify-between md:justify-center"}>
             <h4 className="text-base font-normal text-[#757575]">
               Projectnirvoya - © 2021 All Rights Reserved
             </h4>
-            <Flex className={"items-center"}>
+            <Flex className={"items-center cd:flex md:hidden"}>
                 <h6 className="text-lg font-medium text-[#0198E9]">Pay With</h6>
                 <Img src={Pay}/>
             </Flex>

@@ -17,8 +17,6 @@ import Img6 from "../Assets/Featured-Product/image6.png";
 import Img7 from "../Assets/Featured-Product/image7.png";
 import Img8 from "../Assets/Featured-Product/image8.png";
 
-
-
 const FeaturedProduct = () => {
   const [visibleProducts, setVisibleProducts] = useState(4); // Initial number of visible products
   const loadMoreProducts = () => {
@@ -42,7 +40,6 @@ const FeaturedProduct = () => {
 
     fetchData();
   }, []);
-  console.log();
   return (
     <section className="bg-[#FAFAFA] p-7 font-poppins ">
       <Container>
@@ -120,12 +117,13 @@ const FeaturedProduct = () => {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <Flex className={"pt-10 justify-between flex-wrap gap-y-4"}>
+          <Flex className={"pt-10 justify-evenly flex-wrap gap-y-4"}>
             {products &&
-              products.slice(0, visibleProducts).map((product) => (
+              products.slice(0, visibleProducts).map((product, index) => (
                 // console.log(product)
                 // <li key={product.id}>{product.brand}</li>
                 <Cards
+                  key={index}
                   showSaleBage={true}
                   sale={`${Math.ceil(product.discountPercentage)}% OFF`}
                   title={product.brand}
@@ -149,7 +147,6 @@ const FeaturedProduct = () => {
           </button>
           <IoArrowDown className="text-white" />
         </div>
-       
       </Container>
     </section>
   );
