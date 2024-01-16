@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { CiHeart } from "react-icons/ci";
+import { IoIosStarOutline } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 import Flex from "../Layouts/Flex";
 import Img from "../Layouts/Img";
@@ -7,9 +9,8 @@ import Basket from "../Assets/basket.png";
 import LoveRed from "../Assets/LoveRed.png";
 import Love from "../Assets/Love.png";
 
-import { IoIosStarOutline } from "react-icons/io";
 
-const Cards = ({ showSaleBage, sale, price, title, CardImg }) => {
+const Cards = ({ showSaleBage, sale, price, title, CardImg, id }) => {
   const [loveShow, setLoveShow] = useState(" ");
   return (
     <Flex className=" bg-[#FFF] rounded-[10px] flex-col font-poppins relative">
@@ -46,7 +47,9 @@ const Cards = ({ showSaleBage, sale, price, title, CardImg }) => {
           {" "}
           {price}
         </p>
-        <Img src={Basket} className={"cd:ml-[145px] md:ml-[75px] pb-4"} />
+        <Link to={`/product/${id}`}>
+          <Img src={Basket} className={"cd:ml-[145px] md:ml-[75px] pb-4"} />
+        </Link>
       </Flex>
     </Flex>
   );

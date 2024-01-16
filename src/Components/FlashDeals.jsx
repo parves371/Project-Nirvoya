@@ -51,15 +51,13 @@ const FlashDeals = () => {
                 .slice(0, visibleProducts)
                 .map((product, index) => (
                   <Cards
+                    id={product.id}
                     key={index}
                     showSaleBage={true}
                     sale={`${Math.ceil(product.discountPercentage)}% OFF`}
                     title={product.brand}
                     CardImg={product.thumbnail}
-                    price={`৳${Math.ceil(
-                      product.price -
-                        (product.price * product.discountPercentage) / 100
-                    )}`}
+                    price={`৳${product.price}`}
                   />
                 ))}
           </Flex>

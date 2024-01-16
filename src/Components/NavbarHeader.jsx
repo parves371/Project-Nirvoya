@@ -1,24 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import Slider from "react-slick";
 import { IoIosArrowForward } from "react-icons/io";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import Container from "../Layouts/Container";
 import Flex from "../Layouts/Flex";
 import NavbarSub from "../Layouts/NavbarSub";
 
 const NavbarHeader = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow: false,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-  };
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -59,12 +46,13 @@ const NavbarHeader = () => {
         setShowMenFashion(false);
       }
     });
-  }, [showWomwnFasion,showmenFashion]);
+  }, [showWomwnFasion, showmenFashion]);
   // console.log(womenFashion);
+  const texts =["hi","gi","hi","gi","hi","gi","gi","hi","gi"]
   return (
     <section className="font-poppins bg-[#FAFAFA] pt-8 before:content-[''] before:absolute relative before:w-full before:H-[1.5px] before:border-solid before:border-[#EFEEEE] cd:before:border before:top-16">
       <Container>
-        <Flex className={"justify-around md:hidden cd:flex "}>
+        <Flex className={"justify-around hidden cd:flex "}>
           <h2
             className="w-[11%] text-base font-medium text-[#333333] uppercase transition-all cursor-pointer"
             ref={womenFashion}
@@ -110,30 +98,9 @@ const NavbarHeader = () => {
             Food & Grocery
           </h2>
         </Flex>
-        <div className="cd:hidden px-4 ">
-          <Slider {...settings}>
-            <div className="text-sm font-medium">
-              <h3>Women's Fashion</h3>
-            </div>
-            <div className="text-sm font-medium">
-              <h3>men's Fashion</h3>
-            </div>
-            <div className="text-sm font-medium">
-              <h3>Kid's Fashion</h3>
-            </div>
-            <div className="text-sm font-medium">
-              <h3>Home & Lifestyle</h3>
-            </div>
-            <div className="text-sm font-medium">
-              <h3>Arts & Crafts</h3>
-            </div>
-            <div className="text-sm font-medium">
-              <h3>Computer & Electronics</h3>
-            </div>
-            <div className="text-sm font-medium">
-              <h3>Food & Grocery</h3>
-            </div>
-          </Slider>
+        {/* <MultiTextSlider texts={texts}/> */}
+
+        <div className="">
         </div>
       </Container>
     </section>
