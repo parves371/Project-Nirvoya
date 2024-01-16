@@ -17,11 +17,11 @@ export default {
         CustomLinearSingle: "linear-gradient(180deg, #F2F2F2 0%, #F3F3F3 100%)",
      },
      
+     screens: {
+       md: "428px",
+       cd: "1400px"
+     }
     },
-    screens: {
-      md: "428px",
-      cd: "1400px"
-    }
   },
   plugins: [],
 
