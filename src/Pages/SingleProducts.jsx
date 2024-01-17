@@ -6,12 +6,14 @@ import axios from "axios";
 
 import okImg from "../Assets/ok.png";
 import Love from "../Assets/Love.png";
-import LoveRed from "../Assets/LoveRed.png";
+import profile from "../Assets/profile.jpg";
 
 import Breadcrumb from "../Layouts/Breadcrumb";
 import Container from "../Layouts/Container";
 import Img from "../Layouts/Img";
 import Flex from "../Layouts/Flex";
+import Reviews from "../Components/Reviews";
+import Inpute from "../Layouts/Inpute";
 
 const SingleProducts = () => {
   const [value, setValue] = useState(1); // for increase and decrease for quntity
@@ -67,7 +69,7 @@ const SingleProducts = () => {
             </h2>
             <Flex
               className={
-                "cd:items-center cd:gap-x-8 md:justify-between  cd:justify-between md:flex-col md:flex-row flex-col cd:flex-row mt-5 cd:mt-6 sm:mt-4 gap-y-3"
+                "cd:items-center cd:gap-x-8 md:justify-between  cd:justify-between md:flex-col flex-col cd:flex-row mt-5 cd:mt-6 sm:mt-4 gap-y-3"
               }
             >
               <Flex className={"gap-1 items-center"}>
@@ -168,7 +170,11 @@ const SingleProducts = () => {
                 XXL
               </div>
             </Flex>
-            <Flex className={"mt-10 cd:items-center gap-x-9 flex-col sm:flex-row gap-y-5 sm:pr-5"}>
+            <Flex
+              className={
+                "mt-10 cd:items-center gap-x-9 flex-col sm:flex-row gap-y-5 sm:pr-5 cd:pr-0"
+              }
+            >
               <Flex className={"items-center gap-x-4"}>
                 <h5 className="text-sm text-[#3D3D3F] font-normal">
                   Quantity:{" "}
@@ -209,6 +215,193 @@ const SingleProducts = () => {
             </Flex>
           </Flex>
         </Flex>
+
+        {/* =============  Producr details setion   ================ */}
+        <h2 className="text-lg font-medium text-[#0198E9] py-5 bg-[#F1F1F1] px-5 sm:px-12 border border-solid border-[#FCFCFC] mt-20 font-lato text-justify">
+          Producr details of LED Monitor With High Quality In The World
+        </h2>
+        <Flex className={"bg-[#FFFFFF] font-lato flex-col"}>
+          <h4 className="px-5 sm:px-12 pt-6 text-xl sm:text-2xl font-bold text-[#333333]">
+            See the best picture no matter where you sit
+          </h4>
+          <Flex
+            className={
+              "px-12  pb-9 flex-col w-full border-b border-solid border-[#F1F1F1]"
+            }
+          >
+            <Flex className={"mt-4 justify-between flex-col sm:flex-row"}>
+              <ul className="flex gap-y-1 flex-col pl-4 sm:w-[46%]">
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Size : M, L, XL
+                </li>
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Product Type : Jogger
+                </li>
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Main Material : Cotton
+                </li>
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Gender : Male
+                </li>
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Waist : Mid-rise
+                </li>
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Zip : Fly
+                </li>
+              </ul>
+              <ul className="flex gap-y-1 flex-col pl-4 sm:w-[46%]">
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Zipper : Yes
+                </li>
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Pocket : Two front and One Back Pockets.
+                </li>
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  100% Authentic Product
+                </li>
+                <li className="text-lg text-[#333333] font-normal list-disc">
+                  Product color may slightly vary due to our photography and
+                  Sometimes it’s vary on our devices
+                </li>
+              </ul>
+            </Flex>
+          </Flex>
+          <Flex className={"px-5 sm:px-12 flex-col mt-6"}>
+            <h2 className="text-xl sm:text-2xl font-bold text-[#333333]">
+              Powerful intelligence for perfection
+            </h2>
+            <p className="text-base leading-7 sm:text-lg text-[#333333] font-normal mt-[18px] text-justify">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+              velit, sed quia non numquam eius modi tempora incidunt ut labore
+              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+              vel eum iure reprehenderit qui in ea voluptate velit esse quam
+              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+              voluptas nulla pariatur?
+            </p>
+            <p className="text-base leading-7 sm:text-lg text-[#333333] font-normal mt-7 text-justify">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita{" "}
+            </p>
+          </Flex>
+        </Flex>
+        {/* =================   review setion   ================= */}
+        <Flex className={"flex-col  bg-[#FFFFFF] mt-[30px] "}>
+          <Flex
+            className={"justify-between gap-y-6 flex-col sm:flex-row cd:items-center cd:w-[853px] px-10 py-12"}
+          >
+            <Flex className={"flex-col"}>
+              <h2 className="text-xl text-[#3D3D3F] font-medium">
+                Customer reviews
+              </h2>
+              <Flex className={"gap-2 items-center mt-[10px]"}>
+                <Flex className={"gap-1"}>
+                  <IoIosStarOutline />
+                  <IoIosStarOutline />
+                  <IoIosStarOutline />
+                  <IoIosStarOutline />
+                  <IoIosStarOutline />
+                </Flex>
+                <h2 className="text-[var(--Black-primary,#3D3D3F)] text-base font-normal  md:text-base cd:text-lg ">
+                  4.0
+                </h2>
+                <p className="text-[var(--Black-primary,#3D3D3F)] text-base font-normal]">
+                  out of
+                </p>
+                <h6 className="text-[var(--Black-primary,#3D3D3F)] text-base font-normal">
+                  5
+                </h6>
+              </Flex>
+              <Flex></Flex>
+            </Flex>
+            <Flex className={"flex-col gap-y-[10px]"}>
+              <h6 className="text-sm text-[#3D3D3F] font-normal">5 Stars</h6>
+              <h6 className="text-sm text-[#3D3D3F] font-normal">4 Stars</h6>
+              <h6 className="text-sm text-[#3D3D3F] font-normal">3 Stars</h6>
+              <h6 className="text-sm text-[#3D3D3F] font-normal">2 Stars</h6>
+              <h6 className="text-sm text-[#3D3D3F] font-normal">1 Stars</h6>
+            </Flex>
+            <button className="text-sm text-[#FFFFFF] bg-[#0198E9] px-12 py-[10px] h-10">
+              Write a Review
+            </button>
+          </Flex>
+          <h5 className="text-2xl text-[#333333] font-medium pb-[10px] border-b border-solid border-[#F1F1F1] px-10 ">
+            Reviews (4)
+          </h5>
+          <Reviews
+            name={"Vanille"}
+            rating={"5.0"}
+            time={"1 Month Ago"}
+            message={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+            img={profile}
+          />
+          <Reviews
+            name={"Vanille"}
+            rating={"4.0"}
+            time={"7 Month Ago"}
+            message={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+            img={profile}
+          />
+          <Reviews
+            name={"Vanille"}
+            rating={"3.5"}
+            time={"8 Month Ago"}
+            message={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+            img={profile}
+          />
+        </Flex>
+        <form className={"pl-5 sm:pl-12 pt-[70px] bg-white pb-16"}>
+          <h2 className="text-2xl text-[#383838] font-semibold">
+            Add Your Review
+          </h2>
+          <p className="text-lg text-[#A7A7A7] font-normal mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor.{" "}
+          </p>
+          <Inpute type={"text"} label={"Name *"} className={"mt-[30px]"} />
+          <Inpute type={"email"} label={"Email *"} className={"mt-[30px]"} />
+          <div className="flex flex-col w-full pr-5 cd:w-[745px] mt-[30px]">
+            <label htmlFor="">Review *</label>
+            <textarea
+              name=""
+              id=""
+              cols=""
+              rows="4"
+              className="mt-4 bg-[#FAFAFA] rounded-[5px] outline-[#A7A7A7] p-2 placeholder:p-2 border-2 border-solid border-[#A7A7A7]"
+            ></textarea>
+          </div>
+        <Flex className={"mt-[30px] items-center gap-x-[6px]"}>
+        <h3 className="text-lg text-[#383838] font-medium ">
+            Rating
+          </h3>
+          <Flex className={"gap-1"}>
+            <IoIosStarOutline />
+            <IoIosStarOutline />
+            <IoIosStarOutline />
+            <IoIosStarOutline />
+            <IoIosStarOutline />
+          </Flex>
+        </Flex>
+        <button type="submit" className="mt-[30px] px-14 py-4 bg-[#0198E9] text-lg text-[#FAFAFA] font-medium rounded-[5px]">Submit </button>
+        </form>
       </Container>
     </section>
   );

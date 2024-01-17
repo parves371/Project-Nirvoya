@@ -24,7 +24,7 @@ const NavBar = () => {
   return (
     <nav className="pt-[33px] bg-[#FAFAFA]">
       <Container>
-        <Flex className={"justify-between items-center md:hidden cd:flex"}>
+        <Flex className={"justify-between items-center hidden md:hidden cd:flex"}>
           <Img src={Logo} className={"w-[9%]"} />
           <div className="w-[56%] flex">
             <input
@@ -57,7 +57,7 @@ const NavBar = () => {
           </Flex>
         </Flex>
         {/* ============    for mobile view   =============*/}
-        <Flex className={"cd:hidden flex-col"}>
+        <Flex className={"cd:hidden  flex-col"}>
           <Flex className={"justify-between w-full items-center px-4"}>
             <Img src={Logo} className={""} />
             <Flex className={"gap-x-3 items-center"}>

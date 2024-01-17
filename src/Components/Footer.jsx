@@ -24,7 +24,7 @@ const Footer = () => {
       <Container>
         <Flex
           className={
-            "cd:justify-around md:flex-col cd:flex-row cd:pt-[93px] md:pt-14 gap-y-6 pb-12 md:ml-5 cd:ml-0 "
+            "cd:justify-around flex-col md:flex-col cd:flex-row cd:pt-[93px] md:pt-14 gap-y-6 pb-12 ml-5 cd:ml-0 "
           }
         >
           <Flex className={"items-center gap-x-4"}>
@@ -75,10 +75,10 @@ const Footer = () => {
       </Container>
       <div className="before:content-[''] before:absolute relative before:w-full before:H-[1.5px] before:border-solid before:border-[#EFEEEE] before:border before:top-[-60px]">
         <Container>
-          <Flex className={"cd:justify-around md:flex-col-reverse md:gap-y-8 cd:flex-row cd:mt-[60px] md:mt-6 md:ml-5 cd:ml-0"}>
+          <Flex className={"cd:justify-around flex-col-reverse gap-y-8 cd:flex-row cd:mt-[60px] mt-6 ml-5 cd:ml-0"}>
             <Flex className={"flex-col gap-y-9 "}>
               <Img src={Logo} className={"w-[153px] h-[55px] cd:flex md:hidden"} />
-              <p className="text-lg font-normal text-[#333333] w-[390px] cd:flex md:hidden">
+              <p className="text-lg font-normal text-[#333333] w-full pr-5 text-justify cd:w-[390px] cd:flex md:hidden">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -101,7 +101,7 @@ const Footer = () => {
               <h2 className="text-xl font-medium text-[#333333]">
                 QUICK LINKS
               </h2>
-              <ul className="mt-6 flex flex-col gap-y-6">
+              <ul className="mt-6 flex flex-col gap-3 cd:gap-y-6">
                 <li className="text-lg font-normal text-[rgba(51,51,5,0.8)]">
                   <a href="#">About us</a>
                 </li>
@@ -120,7 +120,7 @@ const Footer = () => {
               <h2 className="text-xl font-medium text-[#333333]">
                 CUSTOMER AREA
               </h2>
-              <ul className="mt-6 flex flex-col gap-y-6">
+              <ul className="mt-6 flex flex-col gap-3 cd:gap-y-6">
                 <li className="text-lg font-normal text-[rgba(51,51,5,0.8)]">
                   <a href="#">My Account</a>
                 </li>
@@ -140,7 +140,7 @@ const Footer = () => {
             </Flex>
             <Flex className={"flex-col gap-y-6"}>
               <h2 className="text-xl font-medium text-[#333333]">CONTACT</h2>
-              <p className="text-lg font-normal text-[#333333] w-[390px]">
+              <p className="text-lg font-normal text-[#333333] w-full pr-5 cd:w-[390px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor .
               </p>
@@ -164,10 +164,10 @@ const Footer = () => {
         <div className="before:content-[''] before:absolute relative before:w-full before:H-[1.5px] before:border-solid before:border-[#EFEEEE] before:border before:top-14 "></div>
         <Container>
           <Flex className={"mt-28 cd:justify-between md:justify-center"}>
-            <h4 className="text-base font-normal text-[#757575]">
+            <h4 className="text-base ml-5 font-normal text-[#757575]">
               Projectnirvoya - © 2021 All Rights Reserved
             </h4>
-            <Flex className={"items-center cd:flex md:hidden"}>
+            <Flex className={"items-center cd:flex  hidden"}>
                 <h6 className="text-lg font-medium text-[#0198E9]">Pay With</h6>
                 <Img src={Pay}/>
             </Flex>
