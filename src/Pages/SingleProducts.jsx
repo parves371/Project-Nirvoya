@@ -400,7 +400,9 @@ const SingleProducts = () => {
             <IoIosStarOutline />
           </Flex>
         </Flex>
-        <button type="submit" className="mt-[30px] px-14 py-4 bg-[#0198E9] text-lg text-[#FAFAFA] font-medium rounded-[5px]">Submit </button>
+       <div className="flex justify-end cd:justify-start pr-5 cd:pr-0">
+       <button type="submit" className="mt-[30px] px-14 py-4 bg-[#0198E9] text-lg text-[#FAFAFA] font-medium rounded-[5px]">Submit </button>
+       </div>
         </form>
       </Container>
     </section>

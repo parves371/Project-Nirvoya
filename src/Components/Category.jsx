@@ -26,7 +26,7 @@ const Category = () => {
     <section className="font-poppins pt-[50px] bg-[#FAFAFA]">
       <Container> 
         <h2 className="font-medium text-[26px] text-[#383838] md:pl-4 cd:pl-0">Category</h2>
-        <Flex className={"flex-wrap gap-3 mt-8 justify-between md:pl-4 cd:pl-0 md:pr-4 cd:pr-0"}>
+        <Flex className={"flex-wrap gap-3 mt-8 px-10 md:px-0 justify-between md:pl-4 cd:pl-0 md:pr-4 cd:pr-0"}>
               <BoxCategory src={Health} title={"Health & Household"}/>
               <BoxCategory src={Kids} title={"Kids Fashion"}/>
               <BoxCategory src={Toys} title={"Toys"}/>

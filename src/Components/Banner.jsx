@@ -8,10 +8,12 @@ import { Pagination } from "swiper/modules";
 
 import BannerLogo from "../Assets/hero.png";
 import Img from "../Layouts/Img";
+import Container from "../Layouts/Container";
 
 const Banner = () => {
   return (
     <section className="mt-5">
+      <Container>
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         <SwiperSlide>
           <Img src={BannerLogo} />
@@ -35,6 +37,7 @@ const Banner = () => {
           <Img src={BannerLogo} />
         </SwiperSlide>
       </Swiper>
+      </Container>
     </section>
   );
 };

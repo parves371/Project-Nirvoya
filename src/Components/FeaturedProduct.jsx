@@ -123,6 +123,7 @@ const FeaturedProduct = () => {
                 // console.log(product)
                 // <li key={product.id}>{product.brand}</li>
                 <Cards
+                
                   key={index}
                   showSaleBage={true}
                   sale={`${Math.ceil(product.discountPercentage)}% OFF`}
@@ -132,6 +133,8 @@ const FeaturedProduct = () => {
                     product.price -
                       (product.price * product.discountPercentage) / 100
                   )}`}
+                  id={product.id}
+                  
                 />
               ))}
           </Flex>
