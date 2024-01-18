@@ -52,15 +52,30 @@ const Paigination = ({ itemsPerPage, data }) => {
 
   return (
     <>
+      <Flex className={"items-center gap-x-2 mt-[65px]"}>
+        <h2 className="text-lg text-[rgba(66,66,65,0.50)] font-medium">
+          Showing
+        </h2>{" "}
+        <h2 className="text-lg text-black font-medium">
+          {`${itemOffset === 0 ? 1 : itemOffset}`}{" "}
+        </h2>
+        <h2 className="text-lg text-[rgba(66,66,65,0.50)] font-medium">of</h2>{" "}
+        <h2 className="text-lg text-black font-medium">{`${items.length}`}</h2>
+        <h2 className="text-lg text-[rgba(66,66,65,0.50)] font-medium">
+          product
+        </h2>
+      </Flex>
       <Flex
-        className={"gap-x-10 justify-center flex-wrap gap-y-[50px] mt-[60px] px-6 md:px-0"}
+        className={
+          "gap-x-10 justify-center flex-wrap gap-y-[50px] mt-5 px-6 md:px-0  "
+        }
       >
         <Items currentItems={currentItems} />
       </Flex>
       <ReactPaginate
         className="flex mt-10 gap-x-4 items-center justify-center cd:justify-end pb-12"
         pageLinkClassName="text-[#0198E9] text-lg font-semibold py-3 px-6 rounded-md bg-white "
-        activeLinkClassName ="text-white text-lg font-semibold py-3 px-6 rounded-md bg-[rgba(1,152,233,1)]"
+        activeLinkClassName="text-white text-lg font-semibold py-3 px-6 rounded-md bg-blue-500"
         breakLabel="..."
         nextLabel="next >"
         onPageChange={handlePageClick}
